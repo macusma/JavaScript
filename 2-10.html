@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+       var a=5;
+       var flag=true;
+       while(flag){
+        var b=prompt("请输入您猜的数字","");
+        var c=Number(b);
+        if (c<a) {
+            alert("猜小了！");
+            continue;
+        }
+        if (c>a) {
+            alert("猜大了！");
+            continue;
+        }
+        if (c=a) {
+            alert("猜对了！");
+            document.write("数字为"+a);
+            break;
+        }
+    </script>
+</body>
+</html>
