@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js中for循环与while循环</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /**
+         * for-循环代码块一定的次数
+         * for/in-循环遍历对象
+         * while-当指定条件为true时循环指定的代码块
+         */
+        //for循环
+        for (var i = 0;i < 10;i++){
+            console.log("i:",i);
+        }
+
+        //for/in循环遍历对象
+        var person = {
+            name:"john",
+            age:25,
+            sg:170
+        }
+        for (key in person) {
+            console.log(person[key])
+        }
+
+        //while循环
+        var count = 1;
+        while (count < 10){
+            count++;
+            console.log("执行while循环");
+        }
+    </script>
+</body>
+</html>
