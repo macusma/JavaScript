@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>break和continue</title>
+</head>
+<body>
+<script>
+    //补充代码
+    var a = 0,sum = 0;
+    for (a = 0;a <= 100;a++){
+       if (a % 2 == 0){
+           continue;
+       }
+       if (a == 22 || a == 44 || a == 66 ||a == 88){
+           continue;
+       }
+       console.log(a);
+        sum=sum+a;
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
