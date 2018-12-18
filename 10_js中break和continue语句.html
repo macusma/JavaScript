@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js中break和continue语句</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /**
+         * break-语句可以跳出循环
+         * continue语句跳出本次循环，继续执行
+         */
+        /*for (i = 0;i < 10;i++){
+            if (i==3){
+                break
+            }
+            console.log("the number is "+i+"<br>");
+        }*/
+
+        //continue语句跳出本次循环，继续执行
+        for (i = 0;i < 10;i++){
+            if (i == 3) continue;
+            console.log("the number is "+i+"<br>");
+        }
+    </script>
+</body>
+</html>
