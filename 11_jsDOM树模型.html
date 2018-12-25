@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsDOM树模型</title>
+</head>
+<body>
+    <div id="intro"></div>
+    <div id="main">
+        <p>The DOM is very userful.</p>
+    </div>
+    <div class="content"></div>
+    <script type="text/javascript">
+        //通过js获得html标签
+        var x=document.getElementById("intro"); //通过ID找HTML，唯一的
+        var x=document.getElementById("main");
+        var y=x.getElementsByTagName("p")[0];  //通过数组来确定查找的唯一性
+        var content=document.getElementsByClassName("content")[0]; //通过数组来确定查找的唯一性
+    </script>
+</body>
+</html>
