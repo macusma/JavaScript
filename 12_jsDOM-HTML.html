@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsDOM-HTML</title>
+</head>
+<body>
+    <div id="main" date="nihao">123</div>
+    <img src="img/logo.png" id="image" />
+    <a href="" id="goURL">跳到百度</a>
+    <script type="text/javascript">
+        var main = document.getElementById("main");
+        main.innerHTML = 'helloworld';
+
+        /**
+         * element.getAttribute() //获取属性
+         * element.setAttribute() //
+         * element.src
+         * element.href
+         */
+        //alert(main.getAttribute("date"));
+        main.setAttribute("date","hi");
+        main.setAttribute("dd","name");
+
+        var image = document.getElementById("image");
+        image.src = "2.jpg";
+
+        var goURl = document.getElementById("goURL");
+        goURl.href = "https://www.baidu.com";
+    </script>
+</body>
+</html>
